@@ -3,8 +3,8 @@ import './header.css'
 
 const Header = () => {
   return (
-    <div>
-      Header
+    <div className='header absolute-center'>
+      <span className='header-gradient'>NFT Cave</span>
     </div>
   )
 }
