@@ -3,8 +3,8 @@ import './footer.css'
 
 const Footer = () => {
   return (
-    <div>
-      Footer
+    <div className='footer absolute-center'>
+      <span className='header-gradient'>Made by Arundhati</span>
     </div>
   )
 }

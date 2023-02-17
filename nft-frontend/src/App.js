@@ -13,7 +13,6 @@ const App = () => {
       <Header />
       <TopFold /> 
       <ConnectWallet/>
-      <TrendingNFTs />
       <InfoSection />
       <Footer />
     </div>
