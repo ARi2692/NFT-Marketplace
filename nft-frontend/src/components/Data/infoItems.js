@@ -1,4 +1,3 @@
-import {MdOutlineAccountBalanceWallet, MdOutlineFileUpload, MdOutlineBookmarks} from 'react-icons/md';
 
 export const INFO_ITEMS = [
     {
