@@ -1,49 +1,14 @@
-// import React from 'react'
-// import './App.css'
-// import Header from "./components/Header";
-// import TopFold from "./components/TopFold";
-// // import TrendingNFTs from "./components/TrendingNFTs";
-// import InfoSection from "./components/InfoSection";
-// import Footer from "./components/Footer";
-// import ConnectWallet from './components/ConnectWallet';
-
-// const App = () => {
-//   return (
-//     <div className='max-width'>
-//       <Header />
-//       <TopFold /> 
-//       <ConnectWallet/>
-//       <InfoSection />
-//       <Footer />
-//     </div>
-//   )
-// }
-
-// export default App
-
-// -----------------------------------------------
-
 import "./App.css";
 
 import { Routes, Route } from "react-router-dom";
 import React from 'react'
 import './App.css'
 import Header from "./components/Header";
-import TopFold from "./components/TopFold";
-// import TrendingNFTs from "./components/TrendingNFTs";
-import InfoSection from "./components/InfoSection";
 import Footer from "./components/Footer";
-// import ConnectWallet from './components/ConnectWallet';
 
-// import Employer from "./pages/Employer";
-// import Freelancer from "./pages/Freelancer";
-// import Landing from "./pages/Landing";
-// import Messages from "./pages/Messages";
-// import Footer from "./components/Footer";
-// import JobPost from "./pages/JobPost";
-// import Register from "./pages/Register";
-// import Profile from "./pages/Profile";
-// import Application from "./pages/Application";
+import Explore from "./pages/Explore";
+import Create from "./pages/Create";
+import Landing from "./pages/Landing";
 import "@rainbow-me/rainbowkit/styles.css";
 import {
   getDefaultWallets,
@@ -91,18 +56,11 @@ const App = () => {
           })}
         >
           <Header />
-          <TopFold /> 
-          <InfoSection />
-          {/* <Routes>
+          <Routes>
             <Route exact path="/" element={<Landing />} />
-            <Route exact path="/freelancer" element={<Freelancer />} />
-            <Route exact path="/employer" element={<Employer />} />
-            <Route exact path="/jobpost" element={<JobPost />} />
-            <Route exact path="/messages" element={<Messages />} />
-            <Route exact path="/register" element={<Register />} />
-            <Route exact path="/profile" element={<Profile />} />
-            <Route exact path="/application" element={<Application />} />
-          </Routes> */}
+            <Route exact path="/explore" element={<Explore />} />
+            <Route exact path="/create" element={<Create />} />
+          </Routes>
           <Footer />
         </RainbowKitProvider>
       </WagmiConfig>

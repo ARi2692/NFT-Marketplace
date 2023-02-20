@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Button from "../../common/button";
 import "./topFold.css";
 
@@ -14,12 +15,16 @@ const TopFold = () => {
           platform. Get Exclusive NFTs from our Mystery Boxes.
         </div>
         <div className="tf-left-btns">
-          <Button btnType="PRIMARY" btnText="Explore" />
+          <Link to="/explore" style={{textDecoration:'none'}} > 
+            <Button btnType="PRIMARY" btnText="Explore" />
+          </Link>
+          <Link to="/create" style={{textDecoration:'none'}} > 
           <Button
             btnType="SECONDARY"
             btnText="Create"
             customClass="tf-left-secondary-btn"
           />
+          </Link>
         </div>
         <div className="tf-left-infoStats">
           <div className="tf-is-infoItem absolute-center">
