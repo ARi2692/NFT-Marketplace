@@ -1,5 +1,5 @@
 import React from 'react'
-import TopFold from "../components/TopFold";
+import TopFold from "../../components/TopFold";
 // import InfoSection from "../components/InfoSection";
 
 const Landing = () => {
