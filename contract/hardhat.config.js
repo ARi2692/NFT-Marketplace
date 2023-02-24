@@ -18,5 +18,8 @@ module.exports = {
       url: `https://polygon-mumbai.g.alchemy.com/v2/${ALCHEMY_API_KEY}`,
       accounts: [YOUR_PRIVATE_KEY]
     },
-  }
+  },
+  etherscan: {
+    apiKey: process.env.POLYGONSCAN_API_KEY
+  },
 };
