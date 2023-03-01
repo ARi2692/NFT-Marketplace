@@ -23,6 +23,7 @@
   margin: 0.5rem;
   max-width: 19rem;
   height: 19rem;
+  width: 19rem;
 }
 
 .productCard__cart{
@@ -77,4 +78,21 @@
 .productSales,
 .productTime{
   font-size: 1.1rem;
+}
+
+.button-buy {
+  position: absolute;
+  bottom: auto;
+  right: auto;
+  padding: 15px 55px;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 60px;
+  text-align: center;
+  border: none;
+  width: max-content;
+  cursor: pointer;
+  color: var(--white);
+  background-color: var(--btn-bg);
 }

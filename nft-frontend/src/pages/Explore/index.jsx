@@ -55,7 +55,7 @@ export default function Explore({marketplace, nft}) {
       <>
       <span className="header absolute-center header-gradient">
         {" "}
-        Your NFTS{" "}
+        Trending NFTS{" "}
       </span>
       <div className="explore-cards">
         {items.map((item) => (

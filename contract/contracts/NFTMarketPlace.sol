@@ -25,6 +25,7 @@ contract NFTMarketplace is ReentrancyGuard {
 
     // itemId -> Item
     mapping(uint => Item) public items;
+    // mapping(address => uint) public itemOwner;
 
     event Offered(
         uint itemId,
