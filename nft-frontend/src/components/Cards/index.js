@@ -1,12 +1,14 @@
 import "./card.css";
 import { ethers } from "ethers"
 
-const Cards = ({ item, marketplace }) => {
+const Cards = ({ index, item, marketplace }) => {
     
   const buyMarketItem = async (item) => {
     await (
       await marketplace.purchaseItem(item.itemId, { value: item.totalPrice })
     ).wait();
+    alert("Successfully bought your NFT!");
+    window.location.replace("/");
   };
 
   return (
@@ -16,9 +18,11 @@ const Cards = ({ item, marketplace }) => {
         <div className="productCard__content">
           <h4 className="productName">{item.name}</h4>
           <p>{item.description}</p>
-          <button onClick={() => buyMarketItem(item)} className="button-buy">
-          Buy for {ethers.utils.formatEther(item.totalPrice)} ETH
-        </button>
+          { index===0 &&
+            <button onClick={() => buyMarketItem(item)} className="button-buy">
+            Buy for {ethers.utils.formatEther(item.totalPrice)} ETH
+          </button>
+          }          
         </div>
       </div>
     </div>

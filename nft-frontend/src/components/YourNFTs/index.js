@@ -1,15 +1,15 @@
 import React from 'react'
-import './trendingNFTs.css'
+import './yourNFTs.css'
 import '../Cards'
 
-const TrendingNFTs = ({items, marketplace}) => {
+const YourNFTs = ({items, marketplace}) => {
   return (
     <>
     {items.length>0 ? 
       <>
       <span className="header absolute-center header-gradient">
         {" "}
-        Trending NFTS{" "}
+        Your NFTS{" "}
       </span>
       <div className="explore-cards">
         {items.map((item) => (
@@ -28,4 +28,4 @@ const TrendingNFTs = ({items, marketplace}) => {
   )
 }
 
-export default TrendingNFTs
+export default YourNFTs

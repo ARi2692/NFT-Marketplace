@@ -114,3 +114,10 @@ box-shadow: 0 0 100px rgba(165, 155, 39, 0.5);
     color: var(--white);
     background-color: var(--btn-bg);
 }
+
+.cr-btns {
+    justify-content: space-around;
+    margin-top: 24px;
+}
+
+

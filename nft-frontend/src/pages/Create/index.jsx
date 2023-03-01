@@ -4,6 +4,7 @@ import './create.css'
 import { AiOutlinePlusCircle } from 'react-icons/ai'
 import { uploadFileToIPFS, uploadJSONToIPFS } from "../../pinata";
 import { useLocation } from "react-router";
+import { Link } from 'react-router-dom';
 
 const Create = ({ marketplace, nft }) => {
 
@@ -77,7 +78,7 @@ const Create = ({ marketplace, nft }) => {
             alert("Successfully listed your NFT!");
             updateMessage("");
             updateFormParams({ name: '', description: '', price: ''});
-            window.location.replace("/explore")
+            window.location.replace("/")
         }
         catch(e) {
             alert( "Upload error"+e )
@@ -113,7 +114,12 @@ const Create = ({ marketplace, nft }) => {
       <input className='input-box-last' value={formParams.price} onChange={e => updateFormParams({...formParams, price: e.target.value})} step="0.01" size="lg" required type="number" placeholder="Min 0.01 ETH" />
     </div>
 
-    <div className='absolute-center' >
+    <div className='cr-btns absolute-center' >
+    <Link to="/" style={{textDecoration:'none'}} > 
+    <button className="button-create">
+      Back
+    </button>
+    </Link>
     {/* <div className="text-green text-center">{message}</div> */}
     <button onClick={listNFT} className="button-create">
       Create & List NFT!

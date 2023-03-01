@@ -19,7 +19,7 @@ describe("NFTMarketplace", function () {
   beforeEach(async function () {
     // Get the ContractFactories and Signers here.
     NFT = await ethers.getContractFactory("NFT");
-    Marketplace = await ethers.getContractFactory("Marketplace");
+    Marketplace = await ethers.getContractFactory("NFTMarketplace");
     [deployer, addr1, addr2, ...addrs] = await ethers.getSigners();
 
     // To deploy our contracts
